@@ -12,7 +12,7 @@ var io = require('socket.io')(server,{
 let users={}
 app.get('/', function(req, res) {
 
-  res.sendFile(__dirname + '/index.html');
+  res.send("hello");
 });
 
 app.get('/status', function(req, res) {
